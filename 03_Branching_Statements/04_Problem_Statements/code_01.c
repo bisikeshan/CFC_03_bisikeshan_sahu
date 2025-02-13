@@ -10,16 +10,21 @@ Given a time (in 24-hour format), determine if the store is open or closed.
 
 int main (void)
 
-{
-        int store_time = 8; // time in 24 hour format
+{        
+        int time = 15;  //  24 hour format ( value from 1 to 24 )
 
-        if( store_time >= 9 && store_time <= 21)
+        if(( time >= 1 && time <= 24) && ( time >= 9 && time <= 21))
+        {    
+            printf("store is open\n");
+        } 
+
+        else if( (time >= 1 && time <= 9) || (time >= 21 && time <= 24))
         {
-        	printf(" store is open.\n");
-        }
+             printf("store is closed\n");
+        }                
         else
         {
-        	printf("store is closed.\n");
+                printf("invalid time\n");
         }
 
         return 0; 
