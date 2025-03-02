@@ -1,0 +1,121 @@
+/********************* solutions **********************/
+
+1.  int studentAge = 20;  
+ans: studentAge is a variable of type integer
+
+2.  float temperatureCelsius = 36.5; 
+ans: temperatureCelsius is a varialbe  of type float  
+
+3.  double bankBalance = 15000.75;
+ans: bankBalance is a variable which store of type double  
+
+4.  char grade = 'A';  
+ans: grade is a variable which stores A of type character
+
+5.  unsigned int populationCount = 1000000;
+ans: populationCount is a variable of type unsigned int   
+
+6.  long fileSizeInBytes = 1048576;  
+ans: fileSizeInBytes is a variable  of type long 
+
+7.  short numberOfSeats = 50;  
+ans: numberOfSeats is a variable which of type short 
+
+8.  unsigned char redColorValue = 255; 
+ans: redColorValue is a variable of type unsigned char  
+
+9.  long long distanceToMoonKm = 384400; 
+ans: distanceToMoonKM is a variable of type long long  
+
+10. unsigned long totalStarsInGalaxy = 1000000000;  
+ans: unsigned long totalStarsInGalaxy  of type unsigned long 
+
+11.  int scores[10]; 
+ans: scores is a array of 10 elements of type integer
+
+12.  float temperatures[7];  
+ans: temperatures is an array of 7 element of type float 
+
+13.  double prices[5]; 
+ans: prices is an array of 5 element of type double 
+
+14.  char name[20];
+ans: name is an array of 20 element of type char   
+
+15.  unsigned int distances[15]; 
+ans: distance is an array of 15 element of type unsigned int  
+
+16.  long populations[8];
+ans: populations is an array of 8 element of type long   
+
+17.  short ages[12];
+ans: age is an array of 12 element of type short  
+
+18.  unsigned char rgbValues[3]; 
+ans: rgbValues is an array of 3 element of type unsigned char  
+
+19.  long long largeNumbers[6];  
+ans: largeNumbers is an array of 6 element of type long long 
+
+20. unsigned long starCounts[4]; 
+ans: startCounts is an array of 4 element of type unsinged long 
+
+21.  int calculateSumOfThreeNumbers(int num1, int num2, int num3);  
+ans: calculateSumOfThreeNumbers is function with three input parameters of type int and returns int 
+
+22.  float computeAverageOfFourNumbers(float a, float b, float c, float d);
+ans: computeAverageOfFourNumbers is function with four input parameters of type float and returns float   
+
+23.  double computePowerWithPrecision(double base, int exponent, double precision);  
+ans: computerPowerWithPrecision is function with three input parameters of type double, int , double returns double  
+
+24.  void swapTwoIntegerValues(int firstValue, int secondValue);
+ans: swapTwoIntegerValues is function with two input parameters of type integer and return void   
+
+25.  char determineStudentGrade(int marks, int totalMarks, char gradingScheme);
+ans: determineStudentGrade is function with three input parameter of type int, int , char and returns char  
+
+26.  long computeFactorialUsingRecursion(int number, long accumulator, int depthLimit); 
+ans: computeFactorialUsingRecursion is function with three input parameters of type int , long , int and returns long  
+
+27.  void displayMessageMultipleTimes(char message, int times, char delimiter); 
+ans: displayMessageMultipleTimes is function with three input parameters char , int , int and returns void.  
+
+28.  int compareThreeIntegerValues(int firstNumber, int secondNumber, int thirdNumber);
+ans: compareThreeIntegerValues is function with three input parameters of type int and returns int.  
+
+29.  double calculateRectangleAreaAndPerimeter(double length, double width, double perimeter);
+ans: calculateRectangleAreaAndPerimeter is function with three input parameters of type double and returns double   
+
+30. void updateUserAccountDetails(int userID, char username, int accountType, double balance);
+ans: updateUserAccountDetails is function with four input parameters of type int , char, int , double and returns void.  
+
+31. long computeSumOfTwoLargeNumbers(long firstNumber, long secondNumber, long carry);
+ans: computerSumOfTwoLargeNumbers is function with three input parameters of type long and returns long.   
+
+32. int findGreatestAmongFourNumbers(int num1, int num2, int num3, int num4);
+ans: findGreatestAmongFourNumbers is a function with four input parameters of type integer and returns integer.  
+
+33. double performDivisionWithValidation(double numerator, double denominator, int errorFlag);
+ans: performDivisionWithValidation is a function with three input parameters of type double, double, int and returns double.  
+
+34. void reverseCharactersWithLimit(char char1, char char2, char char3, int limit);
+ans: reverseCharacterWithLimit is a function with four input parameters of type char , char , char, int and returns void  
+
+35. int countSpecificCharacterOccurrences(char inputChar1, char inputChar2, char targetCharacter, int caseSensitive);  
+ans: countSpecificCharacterOccurrences is function with four input parameters of type char , char, char, int and returns int. 
+
+36. void sortThreeNumbersInAscendingOrder(int first, int second, int third);
+ans: sortThreeNumbersInAscendingOrder is function with three input parameters of type integer and returns void.   
+
+37. float convertTemperatureBetweenScales(float temperature, char fromScale, char toScale);
+ans: convertTemperatureBetweenScales is function with three input parameters of type float , char, char and returns float   
+
+38. int findClosestValueAmongThreeIntegers(int value1, int value2, int value3, int reference); 
+ans: findClosesValueAmongThreeIntegers is function with four input parameters of type integer and returns integer 
+
+39. void drawRectangleWithBorder(int width, int height, char borderSymbol, char fillSymbol);
+ans: drawRectangleWithBorder is a function with four input parameters of type int, int , char, char and returns void.   
+
+40. unsigned long computeNthFibonacciNumberWithSeed(int n, unsigned long firstTerm, unsigned long secondTerm);
+ans: computerNthFibonacciNumberWithSeed is a function with three input parameters of type int , unsigned long , unsigned long and returns unsigned long.   

@@ -1,0 +1,84 @@
+
+/******************************************\
+				DEFINITIONS
+\******************************************/
+
+1.  int studentAge = 20;  
+
+2.  float temperatureCelsius = 36.5;  
+
+3.  double bankBalance = 15000.75;  
+
+4.  char grade = 'A';  
+
+5.  unsigned int populationCount = 1000000;  
+
+6.  long fileSizeInBytes = 1048576;  
+
+7.  short numberOfSeats = 50;  
+
+8.  unsigned char redColorValue = 255;  
+
+9.  long long distanceToMoonKm = 384400;  
+
+10. unsigned long totalStarsInGalaxy = 1000000000;  
+
+11.  int scores[10]; 
+
+12.  float temperatures[7];  
+
+13.  double prices[5];  
+
+14.  char name[20];  
+
+15.  unsigned int distances[15];  
+
+16.  long populations[8];  
+
+17.  short ages[12];  
+
+18.  unsigned char rgbValues[3];  
+
+19.  long long largeNumbers[6];  
+
+20. unsigned long starCounts[4]; 
+
+21.  int calculateSumOfThreeNumbers(int num1, int num2, int num3);  
+
+22.  float computeAverageOfFourNumbers(float a, float b, float c, float d);  
+
+23.  double computePowerWithPrecision(double base, int exponent, double precision);  
+
+24.  void swapTwoIntegerValues(int firstValue, int secondValue);  
+
+25.  char determineStudentGrade(int marks, int totalMarks, char gradingScheme);  
+
+26.  long computeFactorialUsingRecursion(int number, long accumulator, int depthLimit);  
+
+27.  void displayMessageMultipleTimes(char message, int times, char delimiter);  
+
+28.  int compareThreeIntegerValues(int firstNumber, int secondNumber, int thirdNumber);  
+
+29.  double calculateRectangleAreaAndPerimeter(double length, double width, double perimeter);  
+
+30. void updateUserAccountDetails(int userID, char username, int accountType, double balance);  
+
+31. long computeSumOfTwoLargeNumbers(long firstNumber, long secondNumber, long carry);  
+
+32. int findGreatestAmongFourNumbers(int num1, int num2, int num3, int num4);  
+
+33. double performDivisionWithValidation(double numerator, double denominator, int errorFlag);  
+
+34. void reverseCharactersWithLimit(char char1, char char2, char char3, int limit);  
+
+35. int countSpecificCharacterOccurrences(char inputChar1, char inputChar2, char targetCharacter, int caseSensitive);  
+
+36. void sortThreeNumbersInAscendingOrder(int first, int second, int third);  
+
+37. float convertTemperatureBetweenScales(float temperature, char fromScale, char toScale);  
+
+38. int findClosestValueAmongThreeIntegers(int value1, int value2, int value3, int reference);  
+
+39. void drawRectangleWithBorder(int width, int height, char borderSymbol, char fillSymbol);  
+
+40. unsigned long computeNthFibonacciNumberWithSeed(int n, unsigned long firstTerm, unsigned long secondTerm);  
