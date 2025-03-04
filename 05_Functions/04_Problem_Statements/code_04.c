@@ -9,13 +9,18 @@ Problem Statement: Write a function that takes an integer and returns the sum of
 int main()
 {
 	int num = 4321; 
-	int count = 0; 
+	int quotient = 0;  
+	int remainder = 0;
 	int result = 0; 
 
-	for( int temp = num; temp > 0 ; count++ )
+	while( num != 0 )
 	{
-		result += num/10; 
-	}
+		 quotient = num / 10; 
+		 remainder = num % 10; 
+		 result += remainder; 
+
+		 num = quotient; 
+	} 
 
 	printf("%d",result);
 

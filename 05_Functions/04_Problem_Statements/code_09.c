@@ -1,36 +1,43 @@
-/* Print Fibonacci Series up to N Terms
-Concepts Used: Looping (for), Function
-Problem Statement: Write a function that prints the Fibonacci series up to N terms, where N is user-defined.
+/*  Check if a Number is Palindrome
+Concepts Used: Looping (while), Function
+Problem Statement: Write a function that checks if a given number reads the same forward and backward.
 */
 
 // Headers
 #include <stdio.h>
 
 // function declaration 
-void fibonacci_series(int number);
+void pallindrome(int number);
 
 // Entry point function 
 int main()
-{   
-	fibonacci_series(10);
-	fibonacci_series(11);
-	fibonacci_series(12);
+{
+	// function call 
+	pallindrome(121);
+	pallindrome(232);
+	pallindrome(123);
+
 	return 0; 
 }
 
 // function definition 
 
-void fibonacci_series(int number)
+void pallindrome(int number)
 {
-	 int t1 = 0,t2 = 1,nextTerm; 
+	int reversed = 0, temp = number; 
+	
+	while(temp > 0)
+	{
+		reversed = reversed * 10 + temp % 10; 
+		temp /= 10; 
+	}
+	if(number == reversed)
+	{
+		printf("%d is a pallindrome\n",number);
+	}
+	else
+	{
+		printf("%d is not a pallindrome\n",number);
+	}
 
-	 for(int le = 1; le <= number; le++)
-	 {
-	 	 printf("%d ",t1);
-	 	 nextTerm = t1 + t2; 
-	 	 t1 = t2; 
-	 	 t2 = nextTerm; 
-	 }
-
-	 printf("\n");
 }
