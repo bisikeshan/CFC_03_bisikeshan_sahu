@@ -6,13 +6,28 @@ Problem Statement: Write a function that takes an integer and returns the sum of
 // Headers
 #include <stdio.h>
 
+// data definitions
+
+    int num = 4321; 
+	int quotient = 0;  
+	
+	int result = 0; 
+	int return_value = 0; 
+
+// function declaration 
+int sum_of_digits(int num); 
 int main()
 {
-	int num = 4321; 
-	int quotient = 0;  
-	int remainder = 0;
-	int result = 0; 
+    // function call 
+    return_value = sum_of_digits(num);
+    printf("%d",return_value);  
+	return 0; 
+}
 
+// function definition 
+int sum_of_digits(int num)
+{
+	int remainder = 0;
 	while( num != 0 )
 	{
 		 quotient = num / 10; 
@@ -21,8 +36,6 @@ int main()
 
 		 num = quotient; 
 	} 
-
-	printf("%d",result);
-
-	return 0; 
+    
+    return(result);
 }
