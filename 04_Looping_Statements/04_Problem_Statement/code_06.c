@@ -3,11 +3,10 @@
 // Headers
 
 #include <stdio.h>
-
-int count; 
+ 
 int main()
 {
-    int num = 1202, Quotient = 0, Remainder = 0, result = 1, result_z = 0 ;  
+    int num = 1202, Quotient = 0, Remainder = 0, result = 1 ;  
 
      while( num != 0  )
      {
