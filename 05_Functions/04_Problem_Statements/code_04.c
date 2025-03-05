@@ -12,7 +12,6 @@ Problem Statement: Write a function that takes an integer and returns the sum of
 	int quotient = 0;  
 	
 	int result = 0; 
-	int return_value = 0; 
 
 // function declaration 
 int sum_of_digits(int num); 

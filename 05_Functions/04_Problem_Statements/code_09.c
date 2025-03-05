@@ -2,7 +2,7 @@
 Concepts Used: Looping (while), Function
 Problem Statement: Write a function that checks if a given number reads the same forward and backward.
 */
-
+// 
 // Headers
 #include <stdio.h>
 
