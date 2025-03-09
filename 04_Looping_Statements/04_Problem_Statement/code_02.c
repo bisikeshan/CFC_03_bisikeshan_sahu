@@ -7,7 +7,7 @@ int main()
 {
 	for(char le = 'A'; le <= 'Z'; le++)
 	{
-		printf("%c\n",le);
+		printf("%c ASCII value is %d \n",le,le);
 	}
 	return 0; 
 }
