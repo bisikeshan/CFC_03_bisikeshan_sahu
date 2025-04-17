@@ -1,0 +1,2 @@
+#define HEADER_MAX 5599
+#define HEADER_MIN 151
