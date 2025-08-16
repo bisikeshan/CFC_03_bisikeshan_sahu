@@ -1,8 +1,16 @@
 
 #include <iostream>
 #include <exception>
+#include <stdexcept>
 
 #include "ExpenseTracker.hpp"
+
+// struct myexception : exception {
+//     const char* what() const noexcept
+//     {
+//         return "exception:";
+//     }
+// };
 
 // Entry point function 
 
@@ -45,18 +53,22 @@ int main()
 			    std::cout << "Exiting the Expense Tracker. Goodbye!" << std::endl; 
 			    return 0; 
 			    
-			 default:
-			 throw(std::exception("Invalid choice. Please select a valid option from the menu."));  
-			 break; 
+			    default:
+			     throw (std::runtime_error("Invalid choice. Please select a valid option from the menu."));  
+			     break; 
 			}
 
 		}
+		// catch(const std::exception& except)
+		// {
+		// 	std::cerr << "Exception:" << except.what() << std::endl; 
+		// 	std::cout << "Please try again." << std::endl; 
+		// }
 
-		catch(const std::exception &except)
+		catch(const std::runtime_error& except)
 		{
 			std::cerr << "Exception:" << except.what() << std::endl; 
 			std::cout << "Please try again." << std::endl; 
-
 		}
 
 		catch(...)

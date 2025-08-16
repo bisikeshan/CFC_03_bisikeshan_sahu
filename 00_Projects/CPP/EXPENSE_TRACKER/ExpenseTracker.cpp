@@ -3,7 +3,6 @@
 #include <sstream>
 #include <vector>
 #include <stdexcept>
-#include <exception>
 #include "ExpenseTracker.hpp"
 
 // Public Function definition of ExpenseTrackers class
@@ -42,7 +41,7 @@ void ExpenseTracker::AddExpense()
 	std::cin >> dAmount; 
 	if(std::cin.fail() || dAmount < 0 )
 	{
-		throw(std::runtime_error("Invalid amount entered. Please enter a positive number.")); 
+		throw (std::runtime_error("Invalid amount entered. Please enter a positive number.")); 
 	}
 
 	// Input description
@@ -51,16 +50,17 @@ void ExpenseTracker::AddExpense()
 	std::getline(std::cin,strDescription); 
 	if(strDescription.empty()) // Check if description is not empty
 	{
-		throw(std::runtime_error("Description cannot be empty. Please enter a valid description."));
-    }
+		throw (std::runtime_error("Description cannot be empty. Please enter a valid description."));
+   }
 	// Input Date
 	std::cout << "Enter expnese date (YYYY-MM-DD): "; 
 	std::getline(std::cin,strDate); 
 
 	if(strDate.empty())
 	{
-		throw(std::runtime_error("Date cannot be empty. Please enter a valid date.")); 
+		throw (std::runtime_error("Date cannot be empty. Please enter a valid date.")); 
 	}
+
 	// Create expense object and add to vector
 	m_vExpenses.push_back(Expense(dAmount,strDescription,strDate)); 
 
@@ -141,8 +141,9 @@ void ExpenseTracker:: SaveExpensesToFile() const
 	// check if file is open
 	if(!file.is_open())
 	{
-		throw(std::runtime_error("Could not open expenses file for writing."));
+		throw (std::runtime_error("Could not open expenses file for writing."));
 	}
+
 	// Write each expense to the file
 	for(const auto &expense : m_vExpenses)
 	{
@@ -166,8 +167,9 @@ void ExpenseTracker::LoadExpensesFromFile()
 	// check if file is open 
 	if(!file.is_open())
 	{
-		throw(std::runtime_error("Could not open expenses file for reading."));
+		throw (std::runtime_error("Could not open expenses file for reading."));
 	}
+
 
 	// Read each line from the file
 	while(std::getline(file,line))
@@ -195,10 +197,11 @@ void ExpenseTracker::LoadExpensesFromFile()
 		std::getline(iss,date); // Read date until the end of the line
 		isDateValied = !date.empty(); // Check if date is not empty
 
-		if(!isAmountValied || !isDescriptionValied || isDateValied)
+		if(!isAmountValied || !isDescriptionValied || !isDateValied)
 		{
-			throw(std::runtime_error("Invalid expense format in file. Please check the file content.")); 
+			throw (std::runtime_error("Invalid expense format in file. Please check the file content.")); 
 		}
+
 		m_vExpenses.emplace_back(amount,description,date); 
 	}
 

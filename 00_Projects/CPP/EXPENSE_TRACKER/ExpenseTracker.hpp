@@ -45,6 +45,7 @@ public:
 	void AddExpense();
 	void ViewExpenses() const; 
 	double GetTotalExpenses() const;
+		
 
 	
 private:
